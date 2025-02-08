@@ -3,15 +3,45 @@ html {
   scroll-behavior: smooth;
 }
 
-.section {
+.hero-section {
+  position: relative;
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  background: #111; 
+  color: white;
+  overflow: hidden;
 }
 
-.navbar {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.custom-navbar {
+  background: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(1px); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  border: none; 
+}
+
+.custom-navbar .nav-link {
+  color: white !important; 
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }

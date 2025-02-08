@@ -1,11 +1,13 @@
-import { Container,Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 export default function SkillsAndTools() {
     return (
-        <Container id="skills" className='section'>
+        <Container fluid id="skills" className='hero-section'>
             <Row>
-                <h1>Welcome to my skills</h1>
-                <p>I'm Alina!</p>
+                <Col lg={12} md={12}>
+                    <h1 className='title'>Welcome to my Skills</h1>
+                    <p className='subtitle'>I'm Alina!</p>
+                </Col>
             </Row>
         </Container>
     )

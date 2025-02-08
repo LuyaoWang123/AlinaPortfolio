@@ -1,15 +1,15 @@
-import Experience from './Experience';
-import Projects from './Projects';
-import SkillsAndTools from './SkillsAndTools';
-import About from './About'
+import { Container, Row } from 'react-bootstrap';
+import '../../styles/Home.css'
 
-export default function Home() {
+export default function Experience() {
     return (
-        <>
-            <About/>
-            <Experience/>
-            <Projects/>
-            <SkillsAndTools/>               
-        </>
+        <Container fluid id="home" className='hero-section'>
+            <Row fluid className='hero-content'>
+                <h2>Hello, I'm</h2>
+                <h1>Alina Wang.</h1>
+                <h2>Nice to meet you</h2>
+            </Row>
+            <div className='animated-lines'></div>
+        </Container>
     )
 }

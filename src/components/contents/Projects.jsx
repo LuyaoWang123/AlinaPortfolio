@@ -1,11 +1,13 @@
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Projects() {
     return (
-        <Container id="projects" className='section'>
+        <Container fluid id="projects" className='hero-section'>
             <Row>
-                <h1>Welcome to my projects</h1>
-                <p>I'm Alina!</p>
+                <Col lg={12} md={12}>
+                    <h1 className='title'>Welcome to my Projects</h1>
+                    <p className='subtitle'>I'm Alina!</p>
+                </Col>
             </Row>
         </Container>
     )
