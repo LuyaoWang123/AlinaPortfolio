@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import SkillCard from '../cards/SkillCard';
 import { FaJava, FaNodeJs, FaDocker, FaAws, FaLinux } from 'react-icons/fa';
-import { SiKotlin, SiJavascript, SiTypescript, SiAndroid, SiSpringboot, SiMysql, SiC, SiKubernetes, SiFigma, SiPostman } from 'react-icons/si';
+import { SiKotlin, SiJavascript, SiTypescript, SiAndroid, SiSpringboot, SiMysql, SiC, SiKubernetes, SiFigma, SiPostman, SiReact } from 'react-icons/si';
+import SkillGroupCard from '../cards/SkillGroupCard';
 
 
 export default function SkillsAndTools() {
@@ -10,19 +10,20 @@ export default function SkillsAndTools() {
         { icon: <SiKotlin />, name: 'Kotlin' },
         { icon: <SiJavascript />, name: 'JavaScript' },
         { icon: <SiTypescript />, name: 'TypeScript' },
+        { icon: <SiReact />, name: 'React' }, 
         { icon: <SiAndroid />, name: 'Android' },
         { icon: <FaNodeJs />, name: 'Node.js' },
         { icon: <SiFigma />, name: 'Figma' },
-        { icon: <SiPostman />, name: 'Postman' }
+        { icon: <SiPostman />, name: 'Postman' },
     ];
 
     const skillsGroup2 = [
         { icon: <FaJava />, name: 'Java' },
         { icon: <SiSpringboot />, name: 'Spring Boot' },
         { icon: <SiMysql />, name: 'MySQL' },
-        { icon: <FaLinux />, name: 'Linux' },
-        { icon: <SiC />, name: 'C' },
         { icon: <FaAws />, name: 'AWS S3' },
+        { icon: <SiC />, name: 'C' },
+        { icon: <FaLinux />, name: 'Linux' },
         { icon: <FaDocker />, name: 'Docker' },
         { icon: <SiKubernetes />, name: 'Kubernetes' },
     ];
@@ -38,19 +39,12 @@ export default function SkillsAndTools() {
                 </Row>
 
                 <Row className="justify-content-center">
-                    {skillsGroup1.map((skill, index) => (
-                        <Col lg={3} md={4} sm={6} xs={12} className="mb-4 d-flex justify-content-center" key={index}>
-                            <SkillCard icon={skill.icon} name={skill.name} />
-                        </Col>
-                    ))}
-                </Row>
-
-                <Row className="justify-content-center">
-                    {skillsGroup2.map((skill, index) => (
-                        <Col lg={3} md={4} sm={6} xs={12} className="mb-4 d-flex justify-content-center" key={index}>
-                            <SkillCard icon={skill.icon} name={skill.name} />
-                        </Col>
-                    ))}
+                    <Col lg = {6} md={12}>
+                        <SkillGroupCard skills={skillsGroup1}/>
+                    </Col>
+                    <Col lg = {6} md={12}>
+                        <SkillGroupCard skills={skillsGroup2}/>
+                    </Col>
                 </Row>
             </Container>
         </section>

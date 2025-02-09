@@ -1,12 +1,14 @@
 .hero-section {
   position: relative;
   height: 100vh;
-  width: 100vw;
-  background: #111;
+  width: 100%;
+  background: #000;
   color: white;
   overflow: hidden;
   scroll-behavior: smooth;
+  overflow-y: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 20px;

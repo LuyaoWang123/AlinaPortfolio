@@ -8,14 +8,14 @@ export default function Projects() {
         {
             image: fileSystemImge,
             title: 'File system',
-            description: 'a traditional block-based file system',
-            githubLink: 'https://github.com/user/readbud'
+            description: 'A traditional block-based file system',
+            githubLink: 'https://youtu.be/8UwJBktQGbY'
         },
         {
             image: wshImage,
             title: 'Wisconsin Shell',
-            description: 'a Unix-like shell',
-            githubLink: 'https://github.com/user/justap'
+            description: 'A Unix-like shell',
+            githubLink: 'https://youtu.be/i8BzCDMrRkM'
         },
     ];
 
