@@ -1,0 +1,48 @@
+.experience-card {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px;
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    min-height: 255px;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 2;
+}
+
+.card-body {
+    margin-top: 40px; 
+    position: relative;
+    z-index: 1;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+}

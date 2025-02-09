@@ -1,6 +1,6 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Layout from './Layout'
-import Page from '../contents/Page'
+import Page from './Page'
 
 export default function Portofolio() {
     return (
