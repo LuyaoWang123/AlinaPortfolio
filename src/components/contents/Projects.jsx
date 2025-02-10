@@ -8,14 +8,14 @@ export default function Projects() {
         {
             image: fileSystemImge,
             title: 'File system',
-            description: 'A traditional block-based file system',
-            githubLink: 'https://youtu.be/8UwJBktQGbY'
+            description: 'A traditional block-based file system demo',
+            youtubelink: 'https://youtu.be/8UwJBktQGbY'
         },
         {
             image: wshImage,
             title: 'Wisconsin Shell',
-            description: 'A Unix-like shell',
-            githubLink: 'https://youtu.be/i8BzCDMrRkM'
+            description: 'A Unix-like shell demo',
+            youtubelink: 'https://youtu.be/i8BzCDMrRkM'
         },
     ];
 
@@ -35,7 +35,7 @@ export default function Projects() {
                                 image={pro.image}
                                 title={pro.title}
                                 description={pro.description}
-                                githublink={pro.githubLink}/>
+                                youtubelink={pro.youtubelink}/>
                         </Col>
                     ))}
                 </Row>

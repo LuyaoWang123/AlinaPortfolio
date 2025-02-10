@@ -60,7 +60,7 @@
 }
 
 /* GitHub Icon */
-.github-icon {
+.youtube-icon {
     position: absolute;
     bottom: 15px;
     right: 15px;
@@ -69,6 +69,6 @@
     transition: opacity 0.3s ease;
 }
 
-.github-icon:hover {
+.youtube-icon:hover {
     opacity: 1;
 }
