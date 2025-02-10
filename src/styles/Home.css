@@ -76,7 +76,7 @@
 
 @media (max-width: 991px) {
   .resume-button {
-      transition: none !important; 
+      transition: none; 
   }
 
   .resume-button:hover {
@@ -86,4 +86,10 @@
       color: black;
       text-decoration: none;
   }
+}
+
+.resume-button:focus, .resume-button:active {
+  outline: none !important;
+  background-color: white !important;
+  color: black !important;
 }
