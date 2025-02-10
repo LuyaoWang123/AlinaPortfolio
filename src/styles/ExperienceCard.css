@@ -15,6 +15,14 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
+/* Override hover effect on smaller screens */
+@media (max-width: 991px) {
+    .experience-card:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+}
+
 .card-number {
     font-size: 2rem;
     font-weight: bold;

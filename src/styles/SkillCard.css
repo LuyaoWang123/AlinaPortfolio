@@ -15,6 +15,13 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 991px) {
+    .skill-card:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+}
+
 .skill-icon {
     font-size: 36px;
     margin-bottom: 10px;
