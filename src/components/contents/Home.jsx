@@ -4,9 +4,9 @@ import '../../styles/Home.css'
 export default function Home() {
     return (
         <Container fluid id="home" className='hero-section'>
-            <svg class="responsive-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet">
-                <path d="M800,-2000 C100,0 600,500 1200,320" stroke="white" stroke-width="2" fill="none" />
-                <circle cx="750" cy="280" r="70" stroke="white" stroke-width="2" fill="none" />
+            <svg class="curve-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" preserveAspectRatio="xMidYMid meet">
+                <path d="M420,-700 A700,800 900 0 0 1500,300" stroke="white" stroke-width="3" fill="none" />
+                <circle cx="650" cy="390" r="100" stroke="white" stroke-width="3" fill="none" />
             </svg>
             <Row fluid className='hero-content'>
                 <h2>Hello, I'm</h2>
@@ -18,7 +18,6 @@ export default function Home() {
                     Resume
                 </Button>
             </Row>
-            {/* <div className='animated-lines'></div> */}
         </Container>
     )
 }
