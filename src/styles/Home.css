@@ -20,7 +20,7 @@
     color: rgba(255, 255, 255, 0.8);
   }
   
-  .animated-lines {
+  /* .animated-lines {
     position: absolute;
     top: 0;
     right: 0;
@@ -51,7 +51,14 @@
     border-top: 2px solid white;
     border-radius: 50%;
     transform: rotate(-140deg);
-  }
+  } */
+  .responsive-svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
 
   .resume-button {
     margin-top: 20px;

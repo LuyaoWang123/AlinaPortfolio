@@ -1,6 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 
-export default function Experience() {
+export default function About() {
     return (
         <section id="about" className='hero-section'>
             <Container className='py-5' >

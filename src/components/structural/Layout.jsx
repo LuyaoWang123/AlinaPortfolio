@@ -38,7 +38,7 @@ export default function Layout() {
         <>
             <Navbar ref={navBarRef} className="custom-navbar" variant="dark" expand="lg" fixed='top' expanded={!isNavCollapsed}>
                 <Container>
-                    <Navbar.Brand as={Link} smooth to="/#home">Alina Wang</Navbar.Brand>
+                    <Navbar.Brand as={Link} smooth to="/#home" onClick={handleNavClick}>Alina Wang</Navbar.Brand>
                     <Navbar.Toggle onClick={handleToggleClick} />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto" onClick={handleNavClick}>
