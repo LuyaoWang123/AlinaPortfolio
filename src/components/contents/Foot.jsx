@@ -15,7 +15,7 @@ export default function Foot() {
                                 onClick={() => window.location.href = 'mailto:AlinaWang689@gmail.com'}
                                 >Email</Button>
                             <Button 
-                                className="footer-button ms-2"
+                                className="footer-button"
                                 onClick={() => window.open('https://drive.google.com/file/d/1r6D1kES7spCdh0BNRWJFYXiNQ64n2UF4/view?usp=drive_link', '_blank')}
                                 >Resume.</Button>
                         </div>

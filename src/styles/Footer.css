@@ -1,6 +1,6 @@
 .footer-container {
     background-color: #111; 
-    padding: 50px 150px;
+    padding: 5% 10%;
   }
   
   .footer-text {
@@ -85,4 +85,42 @@
     outline: none !important; /* Remove focus outline */
     background-color: #111 !important; /* Prevent the blue flash */
     box-shadow: none !important; /* Remove any shadow */
+  }
+
+  @media (max-width: 576px) {
+    .footer-container {
+      padding: 8% 5%;
+    }
+    .footer-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer-button {
+      width: 100%;
+      text-align: center;
+      transform: none !important;
+    }
+    .footer-button:last-child:hover {
+      transform: none !important;
+      width: 120px !important;
+    }
+
+    .footer-button:first-child:hover {
+      transform: none !important;
+      width: 100px !important;
+    }
+    
+    .footer-button:last-child::after {
+      width: 0 !important; 
+      transition: none !important;
+      transform: none !important;
+    }
+
+    .footer-button, .footer-icon {
+      transition: none !important;
+      transform: none !important;
+    }
+    .footer-text {
+      text-align: center;
+    }
   }
