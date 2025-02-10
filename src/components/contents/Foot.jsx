@@ -22,7 +22,9 @@ export default function Foot() {
                     </Col>
                     <Col md={6} className='d-flex justify-content-end align-items-center'>
                         <p className='footer-text'> </p>
-                        <Button className='footer-icon'>
+                        <Button 
+                            className='footer-icon'
+                            onClick={() => window.open('https://www.linkedin.com/in/luyaowang71a31237/')}>
                             <SiLinkedin />
                         </Button>
                     </Col>

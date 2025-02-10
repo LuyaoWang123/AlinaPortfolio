@@ -64,17 +64,25 @@
     width: 100%;  
   }
 
+  .footer-icon:hover {
+    background-color: #111;
+    transform: scale(1.1);
+  }
+
   .footer-icon {
-    color: white; 
-    display: flex-end;
-    background-color: transparent;
+    background-color: #111 !important; /* Force the background color */
+    color: white !important; /* Icon color */
     border: none;
-    font-size: 28px;
     padding: 9px 24px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: transform 0.3s ease;
   }
 
-  .footer-icon:hover {
-    background-color: transparent;
-    transform: scale(1.05);
+  .footer-icon:focus, .footer-icon:active {
+    outline: none !important; /* Remove focus outline */
+    background-color: #111 !important; /* Prevent the blue flash */
+    box-shadow: none !important; /* Remove any shadow */
   }

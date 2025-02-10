@@ -1,17 +1,21 @@
 .hero-section {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background: #000;
-  color: white;
-  overflow: hidden;
-  scroll-behavior: smooth;
-  overflow-y: auto;
+  min-height: calc(100vh - var(--navbar-height));
+  padding: 0 20px;
+  scroll-margin-top: var(--navbar-height);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  background: #000;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+html, body {
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 .section-center {
@@ -40,6 +44,9 @@
 }
 
 .custom-navbar {
+  position: fixed;
+  top: 0;
+  z-index: 10;
   background: rgba(0, 0, 0, 0.5); 
   backdrop-filter: blur(1px); 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
