@@ -103,12 +103,12 @@
     }
     .footer-button.secondary-button:hover {
       transform: none !important;
-      width: 120px !important;
+      min-width: 120px !important;
     }
 
     .footer-button.primary-button:hover {
       transform: none !important;
-      width: 100px !important;
+      min-width: 100px !important;
     }
     
     .footer-button.secondary-button::after {
