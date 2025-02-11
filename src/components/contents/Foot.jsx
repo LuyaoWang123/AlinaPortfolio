@@ -12,11 +12,11 @@ export default function Foot() {
                         <p className='footer-text'>Feel free to reach out to me via email or any of the listed mediums</p>
                         <div className='footer-buttons'>
                             <Button 
-                                className="footer-button"
+                                className="footer-button primary-button"
                                 onClick={() => window.location.href = `mailto:${CONTACT_INFO.email}`}
                                 >Email</Button>
                             <Button 
-                                className="footer-button"
+                                className="footer-button secondary-button"
                                 onClick={() => window.open(CONTACT_INFO.resume, '_blank')}
                                 >Resume.</Button>
                         </div>

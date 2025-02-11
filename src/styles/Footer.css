@@ -16,25 +16,26 @@
     align-items: center;
   }
   
-  .footer-button:first-child {
+  .footer-button.primary-button {
     background-color: white;
     padding: 9px 24px;
     font-weight: 600;
     color: black;
     border: none;
-    width: 100px;
-    transition: width 0.6s ease; 
+    min-width: 100px;
+    width: auto;
+    transition: min-width 0.6s ease; 
   }
   
   
-  .footer-button:first-child:hover {
+  .footer-button.primary-button:hover {
     padding: 9px 24px; 
     background-color: white;
     color: black;
-    width: 120px; 
+    min-width: 120px; 
   }
   
-  .footer-button:last-child {
+  .footer-button.secondary-button {
     background-color: transparent;
     padding: 10px 20px;
     font-size: 18px;
@@ -44,11 +45,11 @@
     text-align: center;
   }
   
-  .footer-button:last-child:hover {
+  .footer-button.secondary-button:hover {
     background-color: transparent;
   }
   
-  .footer-button:last-child::after {
+  .footer-button.secondary-button::after {
     content: "";
     position: absolute;
     left: 0;
@@ -60,7 +61,7 @@
     transition: width 0.6s ease;  
   }
   
-  .footer-button:last-child:hover::after {
+  .footer-button.secondary-button:hover::after {
     width: 100%;  
   }
 
@@ -100,17 +101,17 @@
       text-align: center;
       transform: none !important;
     }
-    .footer-button:last-child:hover {
+    .footer-button.secondary-button:hover {
       transform: none !important;
       width: 120px !important;
     }
 
-    .footer-button:first-child:hover {
+    .footer-button.primary-button:hover {
       transform: none !important;
       width: 100px !important;
     }
     
-    .footer-button:last-child::after {
+    .footer-button.secondary-button::after {
       width: 0 !important; 
       transition: none !important;
       transform: none !important;
