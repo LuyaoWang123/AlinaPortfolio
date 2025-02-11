@@ -15,9 +15,14 @@ export default function Layout() {
 
         adjustScrollMargin();
         window.addEventListener('resize', adjustScrollMargin);
+        const navbar = navBarRef.current;
+        navbar.addEventListener('shown.bs.collapse', adjustScrollMargin);
+        navbar.addEventListener('hidden.bs.collapse', adjustScrollMargin);
 
         return () => {
             window.removeEventListener('resize', adjustScrollMargin);
+            window.removeEventListener('shown.bs.collapse', adjustScrollMargin);
+            window.removeEventListener('hidden.bs.collapse', adjustScrollMargin);
         };
     }, []);
 

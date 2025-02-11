@@ -1,6 +1,7 @@
 import { Container, Row, Button, Col } from 'react-bootstrap';
 import { SiLinkedin } from 'react-icons/si';
 import '../../styles/Footer.css'
+import CONTACT_INFO from '../constants';
 
 export default function Foot() {
     return (
@@ -12,11 +13,11 @@ export default function Foot() {
                         <div className='footer-buttons'>
                             <Button 
                                 className="footer-button"
-                                onClick={() => window.location.href = 'mailto:AlinaWang689@gmail.com'}
+                                onClick={() => window.location.href = `mailto:${CONTACT_INFO.email}`}
                                 >Email</Button>
                             <Button 
                                 className="footer-button"
-                                onClick={() => window.open('https://drive.google.com/file/d/1r6D1kES7spCdh0BNRWJFYXiNQ64n2UF4/view?usp=drive_link', '_blank')}
+                                onClick={() => window.open(CONTACT_INFO.resume, '_blank')}
                                 >Resume.</Button>
                         </div>
                     </Col>
@@ -24,7 +25,7 @@ export default function Foot() {
                         <p className='footer-text'> </p>
                         <Button 
                             className='footer-icon'
-                            onClick={() => window.open('https://www.linkedin.com/in/luyaowang71a31237/')}>
+                            onClick={() => window.open(CONTACT_INFO.linkedIn)}>
                             <SiLinkedin />
                         </Button>
                     </Col>
