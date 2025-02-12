@@ -18,26 +18,27 @@
   
   .footer-button.primary-button {
     background-color: white;
-    padding: 9px 24px;
+    padding: 10px 24px;
     font-weight: 600;
     color: black;
     border: none;
     min-width: 100px;
     width: auto;
+    border-radius: 8px;
     transition: min-width 0.6s ease; 
   }
   
   
   .footer-button.primary-button:hover {
-    padding: 9px 24px; 
+    padding: 10px 24px; 
     background-color: white;
     color: black;
-    min-width: 120px; 
+    min-width: calc(20%); 
   }
   
   .footer-button.secondary-button {
     background-color: transparent;
-    padding: 10px 20px;
+    padding: 10px 24px;
     font-size: 18px;
     color: white;
     border: none;
@@ -74,7 +75,7 @@
     background-color: #111 !important; /* Force the background color */
     color: white !important; /* Icon color */
     border: none;
-    padding: 9px 24px;
+    padding: 10px 24px;
     font-size: 28px;
     display: flex;
     justify-content: center;
