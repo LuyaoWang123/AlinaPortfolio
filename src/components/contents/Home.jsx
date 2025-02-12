@@ -1,6 +1,6 @@
 import { Button, Container, Row } from 'react-bootstrap';
 import '../../styles/Home.css'
-import CONTACT_INFO from '../constants.js'
+import CONTACT_INFO from '../../utils/constants'
 
 export default function Home() {
     return (

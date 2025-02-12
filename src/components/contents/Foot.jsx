@@ -1,7 +1,7 @@
 import { Container, Row, Button, Col } from 'react-bootstrap';
 import { SiLinkedin } from 'react-icons/si';
 import '../../styles/Footer.css'
-import CONTACT_INFO from '../constants';
+import CONTACT_INFO from '../../utils/constants';
 
 export default function Foot() {
     return (

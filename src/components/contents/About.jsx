@@ -1,6 +1,6 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import '../../styles/About.css'
-import CONTACT_INFO from '../constants';
+import CONTACT_INFO from '../../utils/constants';
 
 export default function About() {
     return (
