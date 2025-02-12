@@ -68,3 +68,9 @@ html, body {
   text-decoration: none;
   transition: color 0.3s;
 }
+
+.custom-navbar .navbar-brand {
+  color: var(--section-content) !important; 
+  text-decoration: none;
+  transition: color 0.3s;
+}

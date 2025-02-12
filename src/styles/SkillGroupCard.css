@@ -1,5 +1,5 @@
 .skill-group-card {
-    background: #000;
+    background: rgb(var(--section-bg));
     border: 1px solid rgba(var(--subtitle-color), 0.2);
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(var(--section-bg), 0.5);

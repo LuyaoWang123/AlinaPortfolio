@@ -1,5 +1,6 @@
 .experience-card {
-    background: transparent;
+    background: rgb(var(--section-bg));
+    color: var(--section-content);
     border: 1px solid rgba(var(--subtitle-color), 0.2);
     border-radius: 12px;
     padding: 20px;

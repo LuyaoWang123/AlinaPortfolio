@@ -4,7 +4,7 @@ import '../..//styles/ExperienceCard.css'
 
 export default function ExperienceCard({number, role, company, date}) {
     return (
-        <Card className='experience-card text-white'>
+        <Card className='experience-card'>
             <span className='card-number'>{number}</span>
             <Card.Body>
                 <Card.Title className='fw-bold'>{role}</Card.Title>
