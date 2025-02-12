@@ -1,0 +1,45 @@
+.check-button-container {
+    display: flex;
+    justify-content: center;  /* Centers the button container */
+    width: 100%;
+}
+
+.check-button-wrapper {
+    display: flex;
+    width: fit-content;  /* Shrinks to button's natural size */
+}
+
+.check-button {
+    background-color: white;
+    padding: 10px 24px;
+    font-weight: 600;
+    color: black;
+    border: none;
+    width: 180px;
+    border-radius: 8px;
+    transition: width 0.6s ease, transform 0.6s ease; 
+    text-align: center;
+    display: inline-block;
+}
+
+.check-button:hover {
+    padding: 10px 24px; 
+    background-color: white;
+    color: black;
+    width: 210px;  
+    transform: translateX(15px);  
+}
+
+@media (max-width: 576px) {
+    .check-button {
+        transition: none;
+    }
+    .check-button:hover {
+        width: 180px;
+        padding: 10px 24px;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        transform: none;
+    }
+}

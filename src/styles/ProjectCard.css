@@ -14,7 +14,7 @@
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 576px) {
     .project-card:hover {
         transform: none !important;
         box-shadow: none !important;
