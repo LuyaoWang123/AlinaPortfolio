@@ -1,9 +1,21 @@
 const Theme = {
-    sectionBackground: '#000000',
+    sectionBackground: '0,0,0',
+    sectionBackgroundOpacity: 0.5,
     sectionContent: '#FFFFFF',
-    subtitle: (opacity = 0.8) => `rgba(255, 255, 255, ${opacity})`,
+    subtitle: `225, 225, 225`,
+    subtitleOpacity: 0.8,
     footerBackground: '#111111',
     footerText: '#696969',
+    
+    applyTheme() {
+        document.documentElement.style.setProperty("--section-bg", Theme.sectionBackground);
+        document.documentElement.style.setProperty("--section-bg-opacity", Theme.sectionBackground);
+        document.documentElement.style.setProperty("--section-content", Theme.sectionContent);
+        document.documentElement.style.setProperty("--subtitle-color", Theme.subtitle);
+        document.documentElement.style.setProperty("--subtitle-opacity", Theme.subtitleOpacity);
+        document.documentElement.style.setProperty("--footer-bg", Theme.footerBackground);
+        document.documentElement.style.setProperty("--footer-text", Theme.footerText);
+    },
 };
 
 export default Theme;

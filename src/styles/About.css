@@ -10,10 +10,10 @@
 }
 
 .check-button {
-    background-color: white;
+    background-color: var(--section-content);
     padding: 10px 24px;
     font-weight: 600;
-    color: black;
+    color: rgb(var(--section-bg));
     border: none;
     width: 180px;
     border-radius: 8px;
@@ -24,10 +24,17 @@
 
 .check-button:hover {
     padding: 10px 24px; 
-    background-color: white;
-    color: black;
+    background-color: var(--section-content);
+    color: rgb(var(--section-bg));
     width: 210px;  
     transform: translateX(15px);  
+}
+
+.check-button:focus, .check-button:active {
+    outline: none !important;
+    background-color: var(--section-content) !important;
+    color: rgb(var(--section-bg)) !important;
+    box-shadow: none !important;
 }
 
 @media (max-width: 576px) {
@@ -37,8 +44,8 @@
     .check-button:hover {
         width: 180px;
         padding: 10px 24px;
-        background-color: white;
-        color: black;
+        background-color: var(--section-content);
+        color: rgb(var(--section-bg));
         text-decoration: none;
         transform: none;
     }

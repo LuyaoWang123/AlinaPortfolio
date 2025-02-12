@@ -1,3 +1,13 @@
+:root {
+  --section-bg: rgb(0,0,0);
+  --section-bg-opacity: 0.5
+  --section-content: #fff;
+  --subtitle-color: rgba(255, 255, 255);
+  --subtitle-ocpacity: 0.8;
+  --footer-bg: #111;
+  --footer-text: #696969;
+}
+
 .hero-section {
   min-height: calc(100vh - var(--navbar-height));
   padding: 0 20px;
@@ -5,8 +15,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000;
-  color: white;
+  background: rgb(var(--section-bg));
+  color: var(--section-content);
   font-size: 2rem;
   text-align: center;
 }
@@ -29,14 +39,14 @@ html, body {
 .title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: white;
+  color: var(--section-content);
   margin-bottom: 20px;
 }
 
 .subtitle {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(var(--subtitle-color), var(--subtitle-ocpacity));
   margin-bottom: 40px;
   max-width: 800px;
   margin-left: auto;
@@ -47,14 +57,14 @@ html, body {
   position: fixed;
   top: 0;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(var(--section-bg), 0.5);
   backdrop-filter: blur(1px); 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 6px rgba(var(--section-bg), 0.1); 
   border: none; 
 }
 
 .custom-navbar .nav-link {
-  color: white !important; 
+  color: var(--section-content) !important; 
   text-decoration: none;
   transition: color 0.3s;
 }

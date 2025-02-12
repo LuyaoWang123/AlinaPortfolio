@@ -4,7 +4,7 @@
     top: 40%; 
     transform: translateY(-25%);
     text-align: left;
-    color: white;
+    color: var(--section-content);
     z-index: 2;
   }
   
@@ -19,7 +19,7 @@
   .hero-content h2 {
     margin: 20px 0;
     font-size: 2.2rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(var(--subtitle-color), var(--subtitle-opacity));
   }
 
   .curve-svg {
@@ -36,8 +36,8 @@
     padding: 10px 24px;
     font-size: 1.2rem;
     font-weight: bold;
-    color: black;
-    background-color: white;
+    color: rgb(var(--section-bg));
+    background-color: var(--section-content);
     border: none;
     border-radius: 8px;
     width: 150px;
@@ -47,8 +47,8 @@
 .resume-button:hover {
     padding: 10px 24px;
     width: 180px;
-    background-color: white;
-    color: black;
+    background-color: var(--section-content);
+    color: rgb(var(--section-bg));
     text-decoration: none;
 }
 
@@ -60,14 +60,14 @@
   .resume-button:hover {
       width: 150px;               
       padding: 10px 24px;       
-      background-color: white;   
-      color: black;
+      background-color: var(--section-content);   
+      color: rgb(var(--section-bg));
       text-decoration: none;
   }
 }
 
   .resume-button:focus, .resume-button:active {
     outline: none !important;
-    background-color: white !important;
-    color: black !important;
+    background-color: var(--section-content) !important;
+    color: rgb(var(--section-bg)) !important;
   }

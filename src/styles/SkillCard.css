@@ -5,14 +5,14 @@
     justify-content: center;
     background: #111;
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
+    border: 1px solid rgba(var(--subtitle-color), 0.2);
+    color: var(--section-content);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 15px rgba(var(--section-bg), 0.5);
 }
 
 @media (max-width: 576px) {

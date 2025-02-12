@@ -1,11 +1,11 @@
 .footer-container {
-    background-color: #111; 
+    background-color: var(--footer-bg); 
     padding: 5% 10%;
   }
   
   .footer-text {
     font-size: 12px;
-    color: #696969;
+    color: var(--footer-text);
     letter-spacing: 0.2px;
     margin-bottom: 30px;
   }
@@ -17,10 +17,10 @@
   }
   
   .footer-button.primary-button {
-    background-color: white;
+    background-color: var(--section-content);
     padding: 10px 24px;
     font-weight: 600;
-    color: black;
+    color: rgb(var(--section-bg));
     border: none;
     min-width: 100px;
     width: auto;
@@ -31,8 +31,8 @@
   
   .footer-button.primary-button:hover {
     padding: 10px 24px; 
-    background-color: white;
-    color: black;
+    background-color: var(--section-content);
+    color: rgb(var(--section-bg));
     min-width: 120px; 
   }
   
@@ -40,7 +40,7 @@
     background-color: transparent;
     padding: 10px 24px;
     font-size: 18px;
-    color: white;
+    color: var(--section-content);
     border: none;
     position: relative;
     text-align: center;
@@ -57,7 +57,7 @@
     right: 0;
     bottom: 0px;  
     height: 2px;
-    background-color: white;
+    background-color: var(--section-content);
     width: 0;  
     transition: width 0.6s ease;  
   }
@@ -67,13 +67,13 @@
   }
 
   .footer-icon:hover {
-    background-color: #111;
+    background-color: var(--footer-bg);
     transform: scale(1.1);
   }
 
   .footer-icon {
-    background-color: #111 !important; /* Force the background color */
-    color: white !important; /* Icon color */
+    background-color: var(--footer-bg) !important; /* Force the background color */
+    color: var(--section-content) !important; /* Icon color */
     border: none;
     padding: 10px 24px;
     font-size: 28px;
@@ -85,7 +85,7 @@
 
   .footer-icon:focus, .footer-icon:active {
     outline: none !important; /* Remove focus outline */
-    background-color: #111 !important; /* Prevent the blue flash */
+    background-color: var(--footer-bg) !important; /* Prevent the blue flash */
     box-shadow: none !important; /* Remove any shadow */
   }
 
