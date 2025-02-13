@@ -40,7 +40,7 @@ export default function Layout() {
     };
 
     const fetchAIColors = async () => {
-        const response = await fetch('/colormind-api', {
+        const response = await fetch('/api/generateTheme', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ model: 'ui' })
