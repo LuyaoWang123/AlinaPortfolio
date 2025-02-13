@@ -16,6 +16,11 @@ const Theme = {
         document.documentElement.style.setProperty("--footer-bg", Theme.footerBackground);
         document.documentElement.style.setProperty("--footer-text", Theme.footerText);
     },
+
+    setTheme(newTheme) {
+        Object.assign(Theme, newTheme);
+        Theme.applyTheme();
+    }
 };
 
 export default Theme;
