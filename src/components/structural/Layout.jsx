@@ -43,7 +43,7 @@ export default function Layout() {
         const response = await fetch('/colormind-api', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ model: 'default' })
+            body: JSON.stringify({ model: 'ui' })
         });
         const data = await response.json();
         const colors = data.result;
